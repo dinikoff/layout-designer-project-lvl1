@@ -1,1 +1,72 @@
 /** CSS STYLE **/
+
+body {
+  color: #2a2626;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+}
+
+.white-color {
+  background-color: #fff;
+}
+
+.translucent-white-color {
+  background-color: #d7ccc0;
+}
+
+.bright-color {
+  background-color: #f5f4f0;
+}
+
+.main-color {
+  background-color: #fe8a02;
+}
+
+.main-dark-color {
+  background-color: #42413c;
+}
+
+.dark-color {
+  background-color: #2a2626;
+}
+
+.translucent-dark-color {
+  background-color: #908d8b;
+}
+
+.brown-color {
+  background-color: #b09a81;
+}
+
+.blue-color {
+  background-color: #1085c5;
+}
