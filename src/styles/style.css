@@ -1,5 +1,30 @@
 /** CSS STYLE **/
 
+:root {
+  --white-color: #fff;
+  --translucent-white-color: #d7ccc0;
+  --bright-color: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-dark-color: #42413c;
+  --dark-color: #2a2626;
+  --translucent-dark-color: #908d8b;
+  --brown-color: #b09a81;
+  --blue-color: #1085c5;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
 body {
   color: #2a2626;
   font-size: 16px;
@@ -10,7 +35,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Neucha', cursive;
+  font-weight: 300;
+  font-family: 'Neucha', sans-serif;
   line-height: 1.2em;
 }
 
@@ -26,47 +52,105 @@ h3 {
   font-size: 34px;
 }
 
-section {
-  max-width: 1110px;
+.section {
+  position: relative;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 1440px;
+  height: 914px;
 
-  text-align: center;
+  padding: 100px 0 100px;
+
+  overflow: hidden;
+
+  background-color: var(--bright-color);
 }
 
-.white-color {
-  background-color: #fff;
+.section::before {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
 }
 
-.translucent-white-color {
-  background-color: #d7ccc0;
+.content-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 1110px;
+  height: 100%;
+
+  margin: 0 auto;
 }
 
-.bright-color {
-  background-color: #f5f4f0;
+.main-image {
+  position: absolute;
+  top: 55px;
+  left: 461px;
+  z-index: 5;
 }
 
-.main-color {
-  background-color: #fe8a02;
+.h1-position {
+  margin-top: 8px;
 }
 
-.main-dark-color {
-  background-color: #42413c;
+.text-wrapper {
+
+  z-index: 10;
+
+  column-count: 2;
+  column-gap: 30px;
 }
 
-.dark-color {
-  background-color: #2a2626;
+.text-block {
+  flex: 1 1 550px;
+  border: 1px solid black;
 }
 
-.translucent-dark-color {
-  background-color: #908d8b;
+.button-box-model {
+  width: 148px;
+  height: 49px;
 }
 
-.brown-color {
-  background-color: #b09a81;
+.button-typo {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+
+  text-transform: uppercase;
 }
 
-.blue-color {
-  background-color: #1085c5;
+.button-visual {
+  color: var(--white-color);
+
+  background-color: var(--main-color);
+}
+
+.button-position {
+  margin-top: 40px;
+}
+
+.break-after {
+  break-after: column;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.text-main-color {
+  color: var(--main-color);
 }
