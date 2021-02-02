@@ -65,7 +65,8 @@ h3 {
 
 .header > .section::before,
 .ikea-effect > .section::before,
-.premature-optimization > .section::before {
+.premature-optimization > .section::before,
+.distortion-of-novelty > .section::before {
   position: absolute;
 
   top: 0;
@@ -241,7 +242,7 @@ h3 {
 }
 
 .column {
-  flex: 1 1 100px;
+  flex: 1 1 105px;
 }
 
 .column-text1 {
@@ -290,4 +291,16 @@ h3 {
   color: var(--brown-color);
 
   background-color: var(--white-color);
+}
+
+/* distortion-of-novelty */
+
+.distortion-of-novelty > .section {
+  background-color: var(--bright-color);
+}
+
+.distortion-of-novelty h4 {
+  color: var(--white-color);
+
+  background-color: var(--brown-color);
 }
