@@ -64,7 +64,8 @@ h3 {
 }
 
 .header > .section::before,
-.ikea-effect > .section::before {
+.ikea-effect > .section::before,
+.premature-optimization > .section::before {
   position: absolute;
 
   top: 0;
@@ -236,30 +237,25 @@ h3 {
 
 .columns-container {
   display: flex;
+  gap: 30px;
 }
 
-.column1 {
-  flex: 1 1 100px;
-
-  margin-right: 30px;
-}
-
-.column2 {
+.column {
   flex: 1 1 100px;
 }
 
-.column2-text1 {
+.column-text1 {
   margin-top: 5px;
 
   font-size: 24px;
   font-family: 'Neucha', serif;
 }
 
-.column2 h2 {
+.column h2 {
   margin-top: 5px;
 }
 
-.column2-text2 {
+.column-text2 {
   margin-top: 25px;
 
   font-size: 34px;
@@ -280,4 +276,18 @@ h3 {
   color: var(--white-color);
 
   background-color: var(--brown-color);
+}
+
+/* premature-optimization */
+
+.premature-optimization > .section {
+  color: var(--white-color);
+
+  background-color: var(--brown-color);
+}
+
+.premature-optimization h4 {
+  color: var(--brown-color);
+
+  background-color: var(--white-color);
 }

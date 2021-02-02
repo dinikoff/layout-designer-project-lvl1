@@ -72,9 +72,9 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-ul li {
+/* ul li {
   list-style: none;
-}
+} */
 
 img {
   vertical-align: top;
