@@ -66,7 +66,8 @@ h3 {
 .header > .section::before,
 .ikea-effect > .section::before,
 .premature-optimization > .section::before,
-.distortion-of-novelty > .section::before {
+.distortion-of-novelty > .section::before,
+.hyperbolic-depreciation > .section::before {
   position: absolute;
 
   top: 0;
@@ -238,7 +239,7 @@ h3 {
 
 .columns-container {
   display: flex;
-  gap: 30px;
+  gap: 29px;
 }
 
 .column {
@@ -270,7 +271,9 @@ h3 {
   padding-left: 10px;
 
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
+
+  text-transform: uppercase;
 }
 
 .ikea-effect h4 {
@@ -303,4 +306,18 @@ h3 {
   color: var(--white-color);
 
   background-color: var(--brown-color);
+}
+
+/* hyperbolic-depreciation */
+
+.hyperbolic-depreciation > .section {
+  color: var(--white-color);
+
+  background-color: var(--brown-color);
+}
+
+.hyperbolic-depreciation h4 {
+  color: var(--brown-color);
+
+  background-color: var(--white-color);
 }
