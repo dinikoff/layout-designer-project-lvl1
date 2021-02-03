@@ -67,7 +67,8 @@ h3 {
 .ikea-effect > .section::before,
 .premature-optimization > .section::before,
 .distortion-of-novelty > .section::before,
-.hyperbolic-depreciation > .section::before {
+.hyperbolic-depreciation > .section::before,
+.errors-in-planning > .section::before {
   position: absolute;
 
   top: 0;
@@ -257,6 +258,11 @@ h3 {
   margin-top: 5px;
 }
 
+.column p:nth-child(2) {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
 .column-text2 {
   margin-top: 25px;
 
@@ -320,4 +326,16 @@ h3 {
   color: var(--brown-color);
 
   background-color: var(--white-color);
+}
+
+/* errors-in-planning */
+
+.errors-in-planning > .section {
+  background-color: var(--bright-color);
+}
+
+.errors-in-planning h4 {
+  color: var(--white-color);
+
+  background-color: var(--brown-color);
 }
