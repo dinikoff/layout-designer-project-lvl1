@@ -286,8 +286,8 @@ header .btn {
   padding: 24px;
 }
 
-.nav-item:hover,
-.nav-item:hover h3 {
+.highlights:hover,
+.highlights:hover h3 {
   color: var(--white-color);
 
   background-color: var(--main-color);
